@@ -1,12 +1,12 @@
- // Import User Model
 
 const express = require("express");
 const bcrypt = require("bcryptjs");
+const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 const nodemailer = require("nodemailer");
 
 const router = express.Router();
-const User = require("../models/User");
+
 
 const SECRET_KEY = process.env.JWT_SECRET;
 
